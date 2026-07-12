@@ -60,6 +60,39 @@ It was built by consolidating and rewriting 1,075 requirements extracted from th
 
 **You never face all 206 checks at once.** That is the whole point of the method below.
 
+## 📖 Read the documents (one click each)
+
+No downloads, no tools, no git: every link below opens the document in your browser, rendered like a normal web page. This is the index for lawyers, DPOs, auditors and analysts.
+
+**The checklist, area by area** (in Italian):
+
+| Area | Read | What it covers |
+|:---:|------|----------------|
+| A | [Documenti legali: presenza e raggiungibilità](checklist/documenti-legali-presenza.md) | Privacy and cookie policy exist, are reachable, versioned, in the right language |
+| B | [Contenuto dell'informativa (Art. 13/14)](checklist/contenuto-informativa.md) | Everything the privacy notice must contain, and whether it matches technical reality |
+| C | [Cookie e tracker pre-consenso](checklist/cookie-tracker-pre-consenso.md) | Nothing may track the user before consent: cookies, pixels, storage, fingerprinting |
+| D | [Cookie banner e CMP](checklist/cookie-banner-cmp.md) | Banner design and behaviour: reject at first layer, no dark patterns, real revocation |
+| E | [Terze parti e trasferimenti extra-UE](checklist/terze-parti-trasferimenti.md) | Who receives data, where they are, contracts and transfer safeguards |
+| F | [Sicurezza tecnica (Art. 32)](checklist/sicurezza-tecnica.md) | HTTPS, TLS, security headers, cookie flags, exposed files, email authentication |
+| G | [Form, raccolta dati e consensi](checklist/form-raccolta-consensi.md) | Every point where the site collects data: consent quality, minimization, minors |
+| H | [Diritti degli interessati](checklist/diritti-interessati.md) | Access, deletion, portability, objection: channels that exist and actually work |
+| I | [Governance e accountability](checklist/governance-accountability-ciclo-vita.md) | Records of processing, DPO, DPIA, retention policies, training |
+| J | [Violazioni dei dati (breach)](checklist/violazioni-dati-breach.md) | Detection, response plan, 72 hour notification, breach register |
+| K | [CRM, newsletter e marketing diretto](checklist/crm-marketing-diretto.md) | *If they do email marketing / CRM*: consent lifecycle, opt out, list hygiene, retention |
+| L | [E-commerce](checklist/ecommerce.md) | *If they sell online*: accounts, payments, post purchase marketing, loyalty profiling |
+| M | [Funzionalità AI sul sito](checklist/ai-act-sito.md) | *If chatbot / AI features*: AI Act transparency, GDPR on LLMs, automated decisions |
+| N | [Canali voce e chiamate automatizzate](checklist/canali-voce.md) | *If outbound calls / voice bots*: consent, recordings, the bot must say it is a bot |
+| O | [Oltre il GDPR: DSA, DMA, DFA](checklist/dsa-dma-dfa.md) | *If user content / marketplace*: platform duties, gatekeeper rights, what is coming |
+
+**The companion documents:**
+
+| Read | What it is |
+|------|-----------|
+| [Il questionario d'intervista](interview/intervista-intake.md) | The three tier client interview kit (gates first, most answers prefilled) |
+| [Il catalogo delle fonti](sources/SOURCES.md) | Every source behind the checks: law, authorities, case law, with caveats |
+| [I requirements per sviluppatori](requirements/EU-WEB-COMPLIANCE.md) | The developer / AI agent version (English, technical) |
+| [Changelog](CHANGELOG.md) | What changed between versions; check IDs never change |
+
 ---
 
 ## Where to start
