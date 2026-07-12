@@ -6,8 +6,8 @@
   <img alt="Areas" src="https://img.shields.io/badge/areas-15-brightgreen">
   <img alt="Sources" src="https://img.shields.io/badge/sources-35_catalogued-orange">
   <img alt="Scope" src="https://img.shields.io/badge/scope-GDPR_·_ePrivacy_·_AI_Act_·_DSA_·_DMA-8A2BE2">
-  <img alt="Status" src="https://img.shields.io/badge/status-private_preview-lightgrey">
-  <img alt="License" src="https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT_(planned)-yellow">
+  <img alt="Status" src="https://img.shields.io/badge/status-public_beta-brightgreen">
+  <img alt="License" src="https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT-yellow">
   <img alt="AI agent ready" src="https://img.shields.io/badge/AI_agent-ready-black">
 </p>
 
@@ -215,7 +215,7 @@ Regole di base: gli ID dei controlli sono immutabili; le affermazioni legali han
 - [x] Kit di intervista a tre livelli
 - [x] Inglese come lingua canonica, edizioni italiane come `.it.md`
 - [ ] `skill/`: il Run 1 / Run 2 automatizzato (crawler + skill per Claude Code e strumenti compatibili)
-- [ ] Rilascio pubblico
+- [x] Rilascio pubblico (2026-07-12)
 
 ## Licenza
 

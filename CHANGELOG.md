@@ -2,6 +2,10 @@
 
 Check IDs are immutable: never recycled, never renumbered. Deprecated checks are marked, not deleted.
 
+## Public release (2026-07-12)
+
+- Repository made public. Dual license activated: CC BY 4.0 (content) + MIT (code).
+
 ## v2.1 (2026-07-12)
 
 - **English becomes the canonical language.** All 15 checklist areas and the interview kit translated; file slugs renamed to English. Italian editions preserved as `.it.md` files, linked from the index. Convention ready for more languages (`.fr.md`, `.de.md`).
