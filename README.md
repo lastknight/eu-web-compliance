@@ -86,32 +86,32 @@ No downloads, no tools, no git: every link below opens the document in your brow
 
 **The checklist, area by area:**
 
-| Area | Read | What it covers |
-|:---:|------|----------------|
-| A | [Legal documents: presence and reachability](checklist/legal-documents.md) · [it](checklist/legal-documents.it.md) | Privacy and cookie policy exist, are reachable, versioned, in the right language |
-| B | [Privacy notice content (Art. 13/14)](checklist/privacy-notice-content.md) · [it](checklist/privacy-notice-content.it.md) | Everything the privacy notice must contain, and whether it matches technical reality |
-| C | [Pre-consent cookies and trackers](checklist/pre-consent-trackers.md) · [it](checklist/pre-consent-trackers.it.md) | Nothing may track the user before consent: cookies, pixels, storage, fingerprinting |
-| D | [Cookie banner and CMP](checklist/cookie-banner-cmp.md) · [it](checklist/cookie-banner-cmp.it.md) | Banner design and behavior: reject at first layer, no dark patterns, real revocation |
-| E | [Third parties and extra-EU transfers](checklist/third-parties-transfers.md) · [it](checklist/third-parties-transfers.it.md) | Who receives data, where they are, contracts and transfer safeguards |
-| F | [Technical security (Art. 32)](checklist/technical-security.md) · [it](checklist/technical-security.it.md) | HTTPS, TLS, security headers, cookie flags, exposed files, email authentication |
-| G | [Forms, data collection and consent](checklist/forms-and-consent.md) · [it](checklist/forms-and-consent.it.md) | Every point where the site collects data: consent quality, minimization, minors |
-| H | [Data subject rights](checklist/data-subject-rights.md) · [it](checklist/data-subject-rights.it.md) | Access, deletion, portability, objection: channels that exist and actually work |
-| I | [Governance and accountability](checklist/governance-accountability.md) · [it](checklist/governance-accountability.it.md) | Records of processing, DPO, DPIA, retention policies, training |
-| J | [Data breaches](checklist/data-breaches.md) · [it](checklist/data-breaches.it.md) | Detection, response plan, 72 hour notification, breach register |
-| K | [CRM, newsletters and direct marketing](checklist/crm-direct-marketing.md) · [it](checklist/crm-direct-marketing.it.md) | *If they do email marketing / CRM*: consent lifecycle, opt out, list hygiene, retention |
-| L | [E-commerce](checklist/ecommerce.md) · [it](checklist/ecommerce.it.md) | *If they sell online*: accounts, payments, post purchase marketing, loyalty profiling |
-| M | [AI features on the site](checklist/ai-features.md) · [it](checklist/ai-features.it.md) | *If chatbot / AI features*: AI Act transparency, GDPR on LLMs, automated decisions |
-| N | [Voice channels and automated calls](checklist/voice-channels.md) · [it](checklist/voice-channels.it.md) | *If outbound calls / voice bots*: consent, recordings, the bot must say it is a bot |
-| O | [Beyond GDPR: DSA, DMA, DFA](checklist/dsa-dma-dfa.md) · [it](checklist/dsa-dma-dfa.it.md) | *If user content / marketplace*: platform duties, gatekeeper rights, what is coming |
+| Area | Read | What it covers | Also in |
+|:---:|------|----------------|:-------:|
+| A | [Legal documents: presence and reachability](checklist/legal-documents.md) | Privacy and cookie policy exist, are reachable, versioned, in the right language | [it](checklist/legal-documents.it.md) |
+| B | [Privacy notice content (Art. 13/14)](checklist/privacy-notice-content.md) | Everything the privacy notice must contain, and whether it matches technical reality | [it](checklist/privacy-notice-content.it.md) |
+| C | [Pre-consent cookies and trackers](checklist/pre-consent-trackers.md) | Nothing may track the user before consent: cookies, pixels, storage, fingerprinting | [it](checklist/pre-consent-trackers.it.md) |
+| D | [Cookie banner and CMP](checklist/cookie-banner-cmp.md) | Banner design and behavior: reject at first layer, no dark patterns, real revocation | [it](checklist/cookie-banner-cmp.it.md) |
+| E | [Third parties and extra-EU transfers](checklist/third-parties-transfers.md) | Who receives data, where they are, contracts and transfer safeguards | [it](checklist/third-parties-transfers.it.md) |
+| F | [Technical security (Art. 32)](checklist/technical-security.md) | HTTPS, TLS, security headers, cookie flags, exposed files, email authentication | [it](checklist/technical-security.it.md) |
+| G | [Forms, data collection and consent](checklist/forms-and-consent.md) | Every point where the site collects data: consent quality, minimization, minors | [it](checklist/forms-and-consent.it.md) |
+| H | [Data subject rights](checklist/data-subject-rights.md) | Access, deletion, portability, objection: channels that exist and actually work | [it](checklist/data-subject-rights.it.md) |
+| I | [Governance and accountability](checklist/governance-accountability.md) | Records of processing, DPO, DPIA, retention policies, training | [it](checklist/governance-accountability.it.md) |
+| J | [Data breaches](checklist/data-breaches.md) | Detection, response plan, 72 hour notification, breach register | [it](checklist/data-breaches.it.md) |
+| K | [CRM, newsletters and direct marketing](checklist/crm-direct-marketing.md) | *If they do email marketing / CRM*: consent lifecycle, opt out, list hygiene, retention | [it](checklist/crm-direct-marketing.it.md) |
+| L | [E-commerce](checklist/ecommerce.md) | *If they sell online*: accounts, payments, post purchase marketing, loyalty profiling | [it](checklist/ecommerce.it.md) |
+| M | [AI features on the site](checklist/ai-features.md) | *If chatbot / AI features*: AI Act transparency, GDPR on LLMs, automated decisions | [it](checklist/ai-features.it.md) |
+| N | [Voice channels and automated calls](checklist/voice-channels.md) | *If outbound calls / voice bots*: consent, recordings, the bot must say it is a bot | [it](checklist/voice-channels.it.md) |
+| O | [Beyond GDPR: DSA, DMA, DFA](checklist/dsa-dma-dfa.md) | *If user content / marketplace*: platform duties, gatekeeper rights, what is coming | [it](checklist/dsa-dma-dfa.it.md) |
 
 **The companion documents:**
 
-| Read | What it is |
-|------|-----------|
-| [The client interview kit](interview/client-interview.md) · [it](interview/client-interview.it.md) | The three tier questionnaire (gates first, most answers prefilled) |
-| [The source catalog](sources/SOURCES.md) | Every source behind the checks: law, authorities, case law, with caveats |
-| [The developer requirements](requirements/EU-WEB-COMPLIANCE.md) | The developer / AI agent version (technical, RFC 2119) |
-| [Changelog](CHANGELOG.md) | What changed between versions; check IDs never change |
+| Read | What it is | Also in |
+|------|-----------|:-------:|
+| [The client interview kit](interview/client-interview.md) | The three tier questionnaire (gates first, most answers prefilled) | [it](interview/client-interview.it.md) |
+| [The source catalog](sources/SOURCES.md) | Every source behind the checks: law, authorities, case law, with caveats | |
+| [The developer requirements](requirements/EU-WEB-COMPLIANCE.md) | The developer / AI agent version (technical, RFC 2119) | |
+| [Changelog](CHANGELOG.md) | What changed between versions; check IDs never change | |
 
 ---
 
