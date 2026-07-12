@@ -2,6 +2,15 @@
 
 Check and source IDs are immutable, forever: never recycled, never renumbered, never reordered. Deprecated items keep their ID and are marked, not deleted. Insertions between existing checks use suffixes (`O-18-bis`, `O-18-ter`), never renumbering.
 
+**Per-ID change tracking.** From v2.1 onward, every release entry lists what happened to each touched identifier, human readable, under these headings:
+
+- **Added**: `E-16: new check on X [S12]`
+- **Changed**: `E-12: risk raised from MEDIUM to HIGH (CNIL enforcement action, 2026)` (say WHAT changed and WHY)
+- **Deprecated**: `A-17: superseded by A-19; kept in table, marked DEPRECATED`
+- **Sources**: `S96 added: <name>` / `S95 caveat updated: <reason>` (source IDs are never removed)
+
+If you cited an ID in a report, this file is where you find out what happened to it since.
+
 ## Public release (2026-07-12)
 
 - Repository made public. Dual license activated: CC BY 4.0 (content) + MIT (code).
