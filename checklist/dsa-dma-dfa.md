@@ -30,22 +30,22 @@ Tutti i check di quest'area sono condizionali o informativi. Il tag `[COND: ...]
 
 **Domande al cliente (Area O)**
 
-Gate di applicabilità (determinano se e come l'area si attiva):
+**Gate di applicabilità**
 - Il sito ospita contenuti generati dagli utenti (commenti, recensioni, forum, upload, profili pubblici)? Se no, il DSA è fuori scope e l'area si ferma qui.
 - Il servizio è una piattaforma online (mette in contatto utenti tra loro o consente pubblicazione a terzi) o un marketplace (consente contratti a distanza tra consumatori e venditori terzi)?
 - Qual è la dimensione dell'impresa (numero addetti e fatturato)? La qualifica di micro o piccola impresa esenta dagli obblighi degli Artt. 20-28 DSA.
 - Il fornitore è stabilito nell'UE? Se no, serve il rappresentante legale ex Art. 13.
 
-DSA operativo (se piattaforma o hosting UGC):
+**Moderazione e trasparenza DSA**
 - Chi gestisce la moderazione dei contenuti e con quali strumenti, anche algoritmici? Esiste un canale di segnalazione dei contenuti illegali?
 - Quando rimuovete o limitate un contenuto, l'utente riceve una motivazione e le informazioni sui rimedi?
 - La pubblicità mostrata è etichettata come tale? Usate sistemi di raccomandazione o ranking algoritmico dei contenuti?
 - Il pubblico include minori? Fate pubblicità profilata su di loro?
 
-DMA (opportunità, se business user):
+**Diritti verso i gatekeeper (DMA)**
 - Vendete su marketplace di terzi, pubblicate app su store o gestite pagine/account su grandi piattaforme? Investite in advertising su Meta o Google?
 - State già estraendo i vostri dati transazionali via le API dei gatekeeper (accesso previsto dall'Art. 6(10) DMA)? Se no, è un diritto non sfruttato.
 
-DFA (radar forward-looking):
+**Radar Digital Fairness Act**
 - Il sito vende, fa iscrivere o personalizza offerte e prezzi verso consumatori? Disdire un abbonamento o una newsletter è semplice quanto iscriversi?
 - Ingaggiate influencer o affiliati? I contenuti sponsorizzati sono etichettati come commerciali?

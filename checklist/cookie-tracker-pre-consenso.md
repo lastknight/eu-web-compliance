@@ -22,13 +22,23 @@
 | C-14 | [COND: Google Analytics in uso] Google Analytics configurato in modalità conforme: Data Processing Amendment/Terms sottoscritti con Google come responsabile, conservazione dei dati di utenti ed eventi limitata, e, se si invoca l'esenzione analytics, mascheramento dell'IP e nessun incrocio o condivisione dei dati con altri prodotti Google né remarketing | L'uso di GA implica un trattamento per conto del titolare: l'accordo sul trattamento con Google è dovuto ex Art. 28 GDPR [N1]; la limitazione della conservazione risponde all'Art. 5(1)(e) GDPR [N1]. Se il tracker analytics viene fatto partire come esente dal consenso, devono ricorrere le condizioni del Garante (mascheramento IP, nessun incrocio con altri dati Google, nessuna condivisione con terzi), altrimenti serve il consenso ex Art. 122 Codice Privacy [N2] e Art. 5(3) ePrivacy [N3], [G1]. Remarketing e condivisione con altri tool Google escludono l'esenzione [S95] | OBBLIGO | ALTO | 🟡 | Ispezione della configurazione GA (impostazione data retention, presenza DPA/Data Processing Terms), verifica del mascheramento IP nelle chiamate di misurazione via HAR, controllo di flag di condivisione dati e segnali di remarketing; condizioni di esenzione con verifica manuale [S95] |
 
 **Domande al cliente (Area C)**
+
+**CMP e prova del consenso**
 - Quale CMP usate (Iubenda, OneTrust, Cookiebot, custom)? Chi la configura e la mantiene, e quando è stata rivista l'ultima volta?
+- Dove conservate le prove del consenso (cookie CMP, log lato server, TC String) e per quanto tempo? Sapete ricostruire, per un singolo utente, data, ora, finalità accettate e versione dell'informativa mostrata?
+
+**Analytics e Consent Mode**
 - Usate Google Consent Mode? Basic o advanced? Chi ha impostato i tag pubblicitari e analytics?
 - Usate Google Analytics? In quale configurazione GDPR (data retention impostata, Data Processing Amendment sottoscritto, mascheramento IP)? Fate remarketing con Analytics o condividete i dati con altri prodotti Google?
-- Dove conservate le prove del consenso (cookie CMP, log lato server, TC String) e per quanto tempo? Sapete ricostruire, per un singolo utente, data, ora, finalità accettate e versione dell'informativa mostrata?
 - Usate una misurazione dell'audience che considerate esente dal consenso (es. analytics prima parte, self-hosted)? Con quale configurazione (dato limitato, nessun incrocio con altri trattamenti, nessuna condivisione con terzi)?
+
+**Pixel e tracker di terze parti**
 - Avete pixel di piattaforme pubblicitarie attivi (Meta, TikTok, LinkedIn, Google Ads)? Su tutte le pagine o solo su alcune (es. checkout, thank-you page)? Se usate il Meta Pixel, avete la notifica dedicata su ogni pagina e il consenso preventivo verificabile richiesto per le aziende UE?
 - Usate strumenti di session recording o heatmap (Hotjar, Clarity, ecc.) che possono registrare l'interazione e i campi digitati?
+
+**Superfici collegate: mobile e CRM**
 - Avete una app mobile collegata al sito? Usa SDK di terze parti, IDFA/Android ID o geolocalizzazione (GPS)? (è una superficie di tracciamento separata dal web)
 - Avete una newsletter, fate lead generation o avete CRM che ricevono automaticamente i dati raccolti sul sito? Con quali piattaforme?
+
+**Governance dei tag**
 - Chi ha accesso al tag manager e c'è un processo di approvazione prima di aggiungere un nuovo tag/tracker?

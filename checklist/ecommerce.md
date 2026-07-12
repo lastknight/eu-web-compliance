@@ -24,16 +24,26 @@
 **Nota di ingaggio**: i check L-04, L-06 e L-09 richiedono un percorso di checkout o un ordine di test. Vanno eseguiti solo con autorizzazione del cliente all'assessment, usando email e dati sintetici controllati dall'auditor e mai dati di pagamento reali di terzi: L-04 si ferma prima di completare il pagamento, L-06 abbandona il carrello, L-09 completa un ordine di test solo se il cliente predispone un prodotto o un codice a costo zero e conferma per iscritto. I check L-01, L-02, L-05, L-10 e L-11 sono in tutto o in parte documentali: la scansione fornisce l'evidenza tecnica (flusso d'acquisto, form, tag, dati mostrati), l'intake fornisce la parte organizzativa (valutazioni di necessità, matrice di conservazione, policy sugli account). Il finding più forte nasce dal divario tra ciò che il negozio fa in concreto e ciò che il cliente documenta di aver deciso.
 
 **Domande al cliente (Area L)**
+
+**Account e servizi senza registrazione**
 - Vendete online? Il checkout consente l'acquisto come ospite o imponete la creazione di un account per comprare? Se l'account è obbligatorio, quale finalità limitata lo giustifica e dove è conservata la valutazione?
 - Offrite abbonamenti o accesso a offerte riservate a una comunità chiusa? Con quali requisiti di accesso (invito, referral, status verificato)?
 - Resi, cambi, garanzie, tracking dell'ordine e modifiche prima della spedizione: sono gestibili senza account, tramite modulo, email o link specifico?
+
+**Pagamenti**
 - Come raccogliete il pagamento? Quale PSP usate e i campi della carta sono ospitati dal PSP (iframe, redirect) o inseriti sul vostro dominio? Il PAN transita o persiste sui vostri sistemi?
 - Offrite il salvataggio della carta per acquisti futuri? Come raccogliete il consenso e con quale default?
+
+**Marketing e tracciamento conversioni**
 - Inviate email promozionali ai clienti dopo l'acquisto? Le limitate a prodotti analoghi a quelli acquistati e offrite l'opt-out già alla raccolta e in ogni invio?
 - Inviate email di recupero del carrello abbandonato? Su quale base giuridica?
+- Usate tag di conversione o tracciamento delle transazioni verso Meta, Google Ads o altre piattaforme (anche server-side, CAPI, enhanced conversions)? Questi tag rispettano la scelta del banner, incluso il rifiuto?
+
+**Profilazione, fedeltà e recensioni**
 - Avete un programma fedeltà o fate profilazione dei clienti? Il consenso al tracciamento è separato dalla registrazione e dall'ordine?
 - Pubblicate recensioni degli acquirenti? Quali dati dell'autore mostrate e come verificate che la recensione provenga da un acquisto reale?
-- Usate tag di conversione o tracciamento delle transazioni verso Meta, Google Ads o altre piattaforme (anche server-side, CAPI, enhanced conversions)? Questi tag rispettano la scelta del banner, incluso il rifiuto?
+- Offrite wishlist, liste dei desideri o raccomandazioni personalizzate? Su quale base giuridica usate la cronologia di navigazione e come informate l'interessato?
+
+**Conservazione e ciclo di vita dei dati**
 - Come distinguete la conservazione dei dati d'ordine da quella dei documenti fiscali? Esiste una matrice di conservazione con basi e tempi distinti per lo stesso cliente?
 - Gli account clienti hanno una policy di dismissione per inattività? Dopo quanto tempo li cancellate o anonimizzate?
-- Offrite wishlist, liste dei desideri o raccomandazioni personalizzate? Su quale base giuridica usate la cronologia di navigazione e come informate l'interessato?

@@ -24,19 +24,28 @@ Legenda Vincolo: OBBLIGO = la mancanza viola direttamente una norma cogente; RAC
 
 **Domande al cliente (Area I)**
 
+**Perimetro e canali di trattamento**
 - Quanti siti e domini gestite? Condividono la stessa infrastruttura e le stesse policy, oppure ognuno ha le sue? (definisce il perimetro di crawling e quali finding valgono per quali domini)
 - Avete un e-commerce? Gestite i pagamenti direttamente o tramite PSP (Stripe, PayPal, Nexi, ecc.)? Conservate dati di pagamento e, se sì, dove?
 - Ci sono app mobile collegate al sito o al servizio? Con quali SDK di terze parti (analytics, advertising, crash reporting)?
 - Fate advertising (Google Ads, Meta, TikTok, LinkedIn)? Usate custom audience o caricate liste di contatti verso le piattaforme?
 - Il sito ha aree riservate B2B o B2C con dati di terzi (clienti dei clienti, dipendenti, fornitori)?
+
+**Registro, ruoli e figure obbligatorie**
 - Avete un registro delle attività di trattamento (Art. 30)? È costruito su una mappatura dei dati (data mapping) e contiene tutti gli elementi dell'Art. 30? Chi lo tiene, ogni quanto lo aggiornate e possiamo riceverne un estratto per confrontarlo con quanto rileviamo tecnicamente?
 - Chi è il referente interno per la privacy e l'accountability? Come sono definite linee di riporto e responsabilità? Avete nominato un DPO, interno o esterno? È indipendente, senza conflitti di interesse, e riporta al vertice? Il suo recapito è pubblicato in informativa ed è un canale realmente presidiato?
 - Il titolare del trattamento è stabilito fuori dall'UE? In tal caso avete designato un rappresentante nell'Unione (Art. 27) e ne indicate il contatto?
+
+**Valutazioni preliminari e privacy by design**
 - Avete svolto una DPIA per i trattamenti a rischio elevato (profilazione su larga scala, monitoraggio, categorie particolari)? Con quale metodologia (WP29, CNIL)? Chi l'ha condotta, quando è stata rivista e dove è conservata la documentazione?
 - Per i trattamenti fondati sul legittimo interesse, avete svolto e documentato una valutazione del legittimo interesse (LIA) prima di iniziare?
+- Applicate criteri di privacy by design e by default (opt-out di default per il marketing, impostazioni più protettive preselezionate, minimizzazione dei campi raccolti)? Chi valida i nuovi form e i nuovi trattamenti prima del rilascio? Il principio pesa anche nella scelta di nuovi fornitori e strumenti?
+
+**Responsabili, violazioni e conservazione**
 - Avete un contratto ex Art. 28 (DPA) con ogni fornitore che tratta dati per vostro conto (hosting, email, analytics, CRM, PSP)? Fate due diligence sulle loro misure di sicurezza e ne verificate periodicamente la conformità?
 - Avete una procedura di gestione delle violazioni (rilevazione, valutazione, notifica al Garante entro 72 ore, comunicazione agli interessati) e tenete un registro delle violazioni ex Art. 33(5)?
 - Esiste un piano di conservazione dei dati per categoria? La cancellazione o l'anonimizzazione alla scadenza avviene in automatico (job programmati, TTL) o è manuale? Come vengono distrutti i dati a fine vita? I termini dichiarati in informativa corrispondono a quanto fate davvero?
-- Applicate criteri di privacy by design e by default (opt-out di default per il marketing, impostazioni più protettive preselezionate, minimizzazione dei campi raccolti)? Chi valida i nuovi form e i nuovi trattamenti prima del rilascio? Il principio pesa anche nella scelta di nuovi fornitori e strumenti?
+
+**Formazione e revisione periodica**
 - Il personale con accesso ai dati riceve formazione periodica sulla protezione dei dati (ingresso e aggiornamento)? Esistono materiali, registri di partecipazione e verifiche dell'apprendimento? I ruoli critici ricevono formazione avanzata?
 - Con quale cadenza rivedete policy, registro dei trattamenti e piano di conservazione? Chi presidia questa revisione e cosa la innesca (scadenza fissa, nuovo trattamento, cambio di fornitori o di Paesi di destinazione)? Avete un programma di audit interno o esterno sulla conformità?

@@ -23,14 +23,23 @@
 
 **Domande al cliente (Area H)**
 
+**Gestione e processo delle richieste**
 - Chi riceve e gestisce le richieste degli interessati (accesso, cancellazione, rettifica, opposizione)? Esiste una procedura scritta con SLA e un registro delle richieste?
 - Quante richieste avete ricevuto nell'ultimo anno e in quanto tempo, in media, avete risposto? Avete mai usato la proroga a due mesi?
+- Come verificate l'identità di chi presenta una richiesta prima di consegnare i dati? Quali informazioni aggiuntive chiedete?
+
+**Estrazione ed export dei dati**
 - Siete in grado di estrarre tutti i dati di una persona da tutti i sistemi (sito, CRM, newsletter, e-commerce, gestionale) e consegnarli in un formato elettronico di uso comune?
 - Per la portabilità, potete fornire i dati in un formato strutturato e leggibile da macchina (JSON o CSV)? Esiste una funzione o un endpoint di export?
-- Come verificate l'identità di chi presenta una richiesta prima di consegnare i dati? Quali informazioni aggiuntive chiedete?
+
+**DPO e canali di marketing**
 - Avete un DPO nominato? Il suo recapito è pubblicato in informativa ed è un canale realmente presidiato?
 - Avete una newsletter e comunicazioni di marketing? Con quale piattaforma? Ogni invio contiene un link di disiscrizione one-click e l'header List-Unsubscribe? Fate lead generation o campagne con custom audience che alimentano il marketing diretto?
+
+**Aree account e informativa**
 - Il servizio prevede aree account per gli utenti? Se sì, l'utente può da solo modificare il profilo, esportare i dati e cancellare l'account?
 - L'informativa elenca tutti i diritti dell'interessato, incluso il diritto di revocare il consenso in qualsiasi momento e il diritto di proporre reclamo al Garante?
+
+**Comunicazione ai terzi e limitazione**
 - Quando cancellate, rettificate o limitate i dati di una persona, comunicate l'azione ai destinatari terzi cui i dati erano stati trasmessi (CRM esterni, fornitori, partner)? Con quale procedura?
 - Avete un meccanismo per congelare il trattamento (limitazione) di un account o di un record senza cancellarlo?

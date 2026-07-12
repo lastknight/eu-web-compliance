@@ -25,32 +25,28 @@
 
 **Domande al cliente (Area B)**
 
-Intake documentale
+**Registro dei trattamenti e basi giuridiche**
 - Avete un registro dei trattamenti (Art. 30)? Possiamo riceverne un estratto per confrontarlo con la policy pubblicata? (necessario per B-03 e B-13)
 - Per ogni finalità, qual è la base giuridica scelta e dove è documentata la motivazione? (B-13)
 - Chi ha redatto l'informativa e con quale supporto legale? È allineata al registro dei trattamenti o è un testo a sé?
 
-Titolare e DPO
+**Titolare e DPO**
 - Chi è il titolare del trattamento e quali contatti volete esporre in informativa? (B-01)
 - È stato nominato un DPO, interno o esterno? Se sì, con quali contatti pubblici? Se no, ricorre uno dei casi obbligatori dell'Art. 37 (autorità pubblica, monitoraggio su larga scala, categorie particolari su larga scala)? (B-02)
 
-Dati raccolti, finalità, legittimo interesse, profilazione
+**Dati raccolti, finalità e profilazione**
 - Quali tipi di dati raccogliete dagli utenti (nome, email, telefono, altro) e li elencate in modo esplicito in informativa? (B-15)
 - Su quali finalità vi appoggiate al legittimo interesse e avete svolto un Legitimate Interest Assessment (LIA)? (B-04)
 - Fate profilazione, scoring, lead scoring, personalizzazione automatica di contenuti o prezzi (dynamic pricing)? Con quale logica e quali conseguenze per l'utente? (B-10)
 
-Raccolta dati e canali
+**Raccolta dati, destinatari e trasferimenti extra-UE**
 - Avete una newsletter? Con quale piattaforma? La lista è stata costruita con opt-in verificabile o importata? (rileva per B-11 e per B-14 se cambia la base)
 - Fate lead generation? Con quali canali (form sul sito, landing, lead ads, acquisto o arricchimento liste da fornitori esterni)? (B-11)
 - Usate CRM o marketing automation (HubSpot, Salesforce, Mailchimp, altri)? I dati raccolti sul sito vi confluiscono in automatico e sono dichiarati come destinatari in policy? (B-05, B-11)
-
-Destinatari, responsabili esterni e trasferimenti
 - Avete l'elenco dei destinatari e dei responsabili del trattamento a cui i dati vengono comunicati? Coincide con le terze parti effettivamente caricate dal sito? (B-05, B-12)
 - Il sito è gestito o sviluppato da un'agenzia esterna? Se accede al backoffice, all'hosting o riceve i dati dei form, avete stipulato la nomina a responsabile esterno con contratto Art. 28? Lo stesso vale per CRM, hosting e piattaforme di email marketing? (B-16)
 - Dove è ospitato il sito e in quale paese ha sede il server? Ci sono fornitori o infrastrutture fuori dall'UE/SEE (hosting, analytics, email, CDN)? Quale garanzia usate per ciascuno (adeguatezza, SCC, BCR, DPF)? (B-06)
 
-Obblighi e conseguenze del rifiuto
+**Obblighi di conferimento e gestione delle modifiche**
 - Per i dati raccolti tramite form, quali sono obbligatori per legge o per contratto e cosa succede se l'utente non li fornisce? (B-09)
-
-Gestione delle modifiche
 - Quando aggiornate l'informativa, notificate gli utenti esistenti delle modifiche sostanziali, in particolare quando cambiano finalità o basi giuridiche? Con quale canale (email, avviso in-app, banner)? Tenete uno storico versioni della policy? (B-14, collegato ad A-08)

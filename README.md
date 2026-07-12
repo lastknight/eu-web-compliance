@@ -135,19 +135,21 @@ Practical navigation, if GitHub is new to you: this page you are reading is the 
 
 ## The method in five minutes
 
-The audit is a loop with one human step in the middle. Cognitive load is engineered down at every stage.
+The audit is a loop with two human touchpoints: a five minute gate call at the start, and the real interview in the middle. Cognitive load is engineered down at every stage.
+
+One principle drives the ordering: **a technical scan can confirm presence, never absence.** If the website shows no trace of a CRM, that does not mean there is no CRM; plenty of companies have almost nothing on their site and all the real processing elsewhere. That is why the questions come first and the scan comes second.
 
 ```
-RUN 1 (machine)          HUMAN (interview)          RUN 2 (machine)           OUTPUT
-scan the site      →     10-16 gate questions   →   verify every answer   →   report with verdicts
-prefill answers          + only the questions       against evidence;         per area, discrepancies
-from evidence            for ACTIVE areas,          extend the scan to        first, every finding
-                         most already prefilled     declared vendors          with ID + legal basis
+HUMAN (5 min)            RUN 1 (machine)           HUMAN (interview)         RUN 2 (machine)          OUTPUT
+16 gate questions   →    scan the site, with   →   only the questions    →   verify every answer  →   report with verdicts
+switch areas on/off      the perimeter already     for ACTIVE areas,         against evidence;        per area, discrepancies
+and reveal what the      informed by the gates;    most already prefilled    extend the scan to       first, every finding
+site cannot show         prefill from evidence     with evidence             declared vendors         with ID + legal basis
 ```
 
-**1. First pass: the scan (Run 1).** An automated pass over the target site collects evidence: cookies and trackers before consent, banner behaviour, security headers, third party domains, forms. This alone answers a big slice of the questionnaire ("which consent tool do you use?", "is Google Analytics active?"): those answers get **prefilled with evidence attached**, and the client only confirms or corrects them.
+**1. The gates, first.** 10 to 16 **gate questions** to the client before anything else (five minutes, phone or email): Do you send newsletters? Do you sell online? Do you run a CRM? Any chatbot? Outbound calls? User generated content? Every "no" switches off an entire area, and every "yes" tells the scan about properties the website alone would never reveal. A brochure site without marketing typically activates well under half of the catalog.
 
-**2. The gates.** Before any detail, 10 to 16 **gate questions** decide which areas exist at all: Do you send newsletters? Do you sell online? Do you run a CRM? Any chatbot or AI features? Outbound calls? User generated content? Every "no" switches off an entire area. A brochure site without marketing typically activates well under half of the catalog.
+**2. First pass: the scan (Run 1).** An automated pass over the target site, its perimeter informed by the gate answers, collects evidence: cookies and trackers before consent, banner behaviour, security headers, third party domains, forms. This answers a big slice of the questionnaire by itself ("which consent tool do you use?", "is Google Analytics active?"): those answers get **prefilled with evidence attached**, and the client only confirms or corrects them.
 
 **3. The interview.** What remains is a 20 to 40 question conversation, organized per area, with stable IDs (`Q-C-03`). The interview document is also the **exchange format**: fill in the answers, feed the document back.
 

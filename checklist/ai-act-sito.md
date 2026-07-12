@@ -27,16 +27,25 @@
 
 **Domande al cliente (Area M)**
 
+**Perimetro e funzioni AI**
 - Il sito integra un chatbot, un assistente conversazionale o funzioni basate su LLM (ricerca generativa, sintesi, drafting)? Con quale fornitore o modello (OpenAI, Anthropic, Google, soluzione self-hosted)?
 - Il sito genera o manipola contenuti sintetici (testo, immagini, audio, video) mostrati al pubblico? In quali sezioni?
 - Pubblicate testi generati da AI su temi di interesse pubblico (notizie, approfondimenti)? Con quale processo di revisione umana ed editoriale?
+
+**Classificazione del rischio e pratiche vietate**
 - Per quale finalità è usato il sistema AI e con quali meccanismi persuasivi? (serve a escludere pratiche vietate ex Art. 5: manipolazione, sfruttamento di vulnerabilità, social scoring, riconoscimento emozioni)
 - Avete classificato il rischio del sistema secondo l'AI Act e prodotto un memo di classificazione?
+
+**Basi giuridiche e training**
 - Su quale base giuridica trattate gli input dei prompt, gli output generati e l'eventuale uso dei prompt per il training? Le fasi sono distinte nella vostra analisi?
 - Gli input degli utenti vengono usati per addestrare o migliorare il modello? È previsto un opt-out? Come informate l'utente?
 - La privacy policy descrive esplicitamente il trattamento via AI, i limiti del modello e l'uso per training?
+
+**Diritti ed esattezza degli output**
 - Come gestite le richieste di rettifica e cancellazione riferite agli output del modello?
 - Come misurate e correggete l'esattezza degli output, oltre ai disclaimer?
+
+**Valutazione d'impatto e fornitori**
 - Il sistema effettua profilazione o decisioni automatizzate con effetti giuridici o significativi sulle persone? Avete svolto una DPIA e coinvolto il DPO?
 - I contratti con i fornitori AI definiscono i ruoli provider/deployer, gli obblighi di trasparenza Art. 50 e, dove trattano dati per vostro conto, un DPA ex Art. 28?
 

@@ -25,15 +25,25 @@
 **Nota di ingaggio**: i check E-11, E-12, E-13 ed E-14 sono documentali e non verificabili dal solo lato sito. La scansione tecnica (E-01..E-10, E-15 per la parte di detection) produce la lista fattuale delle terze parti e dei trasferimenti; questi quattro check confrontano quella lista con la filiera contrattuale dichiarata dal cliente. Il valore del finding sta proprio nel divario tra ciò che il browser osserva e ciò che il cliente documenta.
 
 **Domande al cliente (Area E)**
+
+**Responsabili del trattamento e DPA**
 - Avete un elenco aggiornato dei fornitori che trattano dati personali per vostro conto, con il DPA (Art. 28) firmato per ciascuno? Chi lo mantiene? (i responsabili tipici di un sito: Google Analytics, il CMS/hosting, la CDN, la piattaforma newsletter, il CRM, l'error tracking tipo Sentry, il gateway di pagamento, il captcha)
 - Il sito è sviluppato o gestito da un'agenzia web esterna? Se l'agenzia accede al backoffice, riceve i dati dei form o vi fornisce l'hosting, l'avete nominata responsabile esterno del trattamento?
 - Per ciascun fornitore principale avete l'elenco dei sub-responsabili e siete informati e autorizzati al loro uso?
 - Avete una procedura di valutazione del fornitore prima dell'attivazione (esame di privacy policy e misure di sicurezza) e un piano di audit per i vendor ad alto rischio?
+
+**Trasferimenti extra-SEE e localizzazione dei dati**
 - Per i fornitori fuori dallo SEE: quale meccanismo di trasferimento usate (adeguatezza, DPF per gli USA, SCC, BCR)? Per le SCC avete un Transfer Impact Assessment documentato per paese?
 - Sapete in quali paesi risiedono fisicamente i dati (hosting, backup, CDN, cloud del CRM e della newsletter, provider di pagamento)?
+
+**Newsletter, CRM e lead generation**
 - Avete una newsletter? Con quale piattaforma (Mailchimp, Kit, Brevo, ecc.) e dove ha sede il trattamento?
 - Fate lead generation o avete CRM attivi (HubSpot, Salesforce, ecc.) che ricevono automaticamente i dati raccolti sul sito? Dove sono ospitati?
+
+**Tag manager e pixel pubblicitari**
 - Chi ha accesso al tag manager? Esiste un processo di approvazione prima di aggiungere un nuovo tag o tracker, e chi verifica che i tag caricati corrispondano a quelli autorizzati?
 - Usate pixel pubblicitari o di remarketing (Facebook/Meta Pixel, LinkedIn Insight Tag, Google Ads)? Partono solo dopo il consenso? Li avete dichiarati in informativa e cookie policy con le istruzioni di opt-out?
+
+**reCAPTCHA e font remoti**
 - Usate reCAPTCHA di Google su form o login? Avete valutato alternative che non trasferiscono verso gli USA?
 - I font del sito sono serviti da Google Fonts remoto o self-hostati?

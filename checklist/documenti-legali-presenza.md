@@ -16,9 +16,15 @@
 | A-08 | Policy versionata con data e storico delle modifiche accessibile o conservato: ogni versione dell'informativa è identificabile con una data e le versioni precedenti sono ricostruibili | L'Art. 5(2) impone al titolare di poter dimostrare quale informativa era in vigore in un dato momento, per provare la validità dei consensi e delle basi giuridiche raccolte sotto quella versione. La sola data corrente non basta se lo storico non è conservato: l'impossibilità di ricostruirlo è carenza di accountability [N1] [S11] | OBBLIGO | MEDIO | 🟡 | Estrazione della data e di un eventuale numero di versione dal testo; verifica della presenza di una sezione "cronologia modifiche" o di versioni archiviate linkate; in assenza, flag da confermare con il cliente sulla conservazione interna dello storico |
 
 **Domande al cliente (Area A)**
+
+**Redazione e storico versioni**
 - Chi ha redatto le informative (privacy e cookie) e quando sono state aggiornate l'ultima volta? Esiste un processo di revisione periodica?
 - Conservate uno storico delle versioni precedenti delle policy, con le date di entrata in vigore di ciascuna? In quale forma (repository, CMS con versioning, archivio documentale)?
+
+**Lingue e formato di pubblicazione**
 - In quante lingue è disponibile il sito e in quante lo sono le informative? Chi cura le traduzioni delle policy?
 - Le informative sono servite come pagine HTML del sito o come file PDF/documenti scaricabili?
+
+**Coerenza tra canali e notifica delle modifiche**
 - Esistono versioni delle policy per altri canali (app mobile, punti vendita fisici, contatto telefonico, landing page di campagna) da tenere coerenti con quelle del sito?
 - Quando modificate una policy in modo sostanziale, notificate agli utenti la modifica? Con quale canale (email, banner, avviso in pagina)? (collegamento con B-14)

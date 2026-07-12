@@ -24,15 +24,25 @@
 **Nota di ingaggio**: i check G-06, G-10 e G-11 comportano un'iscrizione o una sottomissione di prova con indirizzi e dati sintetici controllati dall'auditor: vanno eseguiti solo con autorizzazione del cliente all'assessment e usando identificativi usa e getta, mai dati reali di terzi. Il check G-13 richiede la sola navigazione del checkout, senza completare l'acquisto né inserire dati di pagamento reali. I check G-09, G-12 e G-14 sono documentali e non verificabili dal solo lato sito: la scansione produce l'evidenza tecnica (form, campi, flussi, presenza o assenza della modalità ospite), l'intake fornisce la parte organizzativa (verifica dell'età, log del consenso, origine delle liste e informativa ex Art. 14). Il finding più forte nasce dal divario tra ciò che i form raccolgono e ciò che il cliente documenta di gestire.
 
 **Domande al cliente (Area G)**
+
+**Newsletter e liste**
 - Avete una newsletter? Con quale piattaforma (Mailchimp, Kit, Brevo, ecc.)? Usate il double opt-in? Come è stata costruita la lista storica e avete l'opt-in verificabile per gli iscritti già presenti?
-- Fate lead generation? Con quali canali (form del sito, landing page, lead ads di Meta/LinkedIn, acquisto o arricchimento di liste)?
 - Le vostre liste contengono contatti acquistati o arricchiti da terzi? Come avete adempiuto all'informativa ex Art. 14 verso queste persone e come possono opporsi?
+
+**Lead generation e prospezione B2B**
+- Fate lead generation? Con quali canali (form del sito, landing page, lead ads di Meta/LinkedIn, acquisto o arricchimento di liste)?
 - Fate prospezione B2B verso professionisti? Su quale base la fondate (consenso o legittimo interesse) e la sollecitazione è pertinente al ruolo del destinatario?
+
+**CRM e prova del consenso**
 - Avete un CRM attivo (HubSpot, Salesforce, Pipedrive, ecc.)? I dati raccolti dai form del sito ci confluiscono in automatico e con quale mappatura dei consensi?
 - Dove e come registrate la prova del consenso (data, ora, metodo, finalità, versione dell'informativa)? Sapreste ricostruire il consenso di un singolo iscritto se contestato?
 - Il consenso al marketing è separato dagli altri consensi nei vostri form, oppure è accorpato all'accettazione dei termini o alla registrazione?
+
+**Email marketing e tracciamento dei form**
 - Le vostre email di marketing contengono un link di disiscrizione a un clic e l'header List-Unsubscribe? In quanto tempo processate le disiscrizioni?
 - Usate strumenti di session recording, replay o heatmap (Hotjar, Microsoft Clarity, FullStory, ecc.)? Sono configurati per escludere o mascherare i campi dei form?
+
+**Minori, dati particolari ed e-commerce**
 - Il vostro pubblico include minori di 14 anni? Se sì, come verificate l'età e come raccogliete il consenso di chi esercita la responsabilità genitoriale?
 - Qualche form raccoglie dati che rientrano nelle categorie particolari (salute, orientamento, convinzioni, dati biometrici)? Con quale base giuridica e quali garanzie?
 - Vendete online (e-commerce)? Il checkout consente l'acquisto come ospite oppure imponete la creazione di un account per comprare? Se l'account è obbligatorio, su quale base giuridica lo fondate?

@@ -18,14 +18,24 @@
 **Nota di ingaggio**: quest'area è per costruzione back-end e organizzativa. Il solo J-01 espone un indicatore osservabile dalla scansione (il file /.well-known/security.txt e il canale di segnalazione in policy) e J-06 riusa l'estrazione del contatto DPO già effettuata in B-02/H-02; tutto il resto (J-02, J-03, J-04, J-05, J-07, J-08 e la parte non osservabile di J-01) si riscontra per via documentale in intake e nella lettura degli accordi Art. 28 con i responsabili. Il probe di /.well-known/security.txt è una richiesta HTTP passiva, non intrusiva.
 
 **Domande al cliente (Area J)**
+
+**Rilevazione e piano di risposta**
 - Come vi accorgereste di una violazione dei dati? Avete monitoraggio e alerting sugli accessi, sui database e sui sistemi che trattano dati personali (SIEM, log review, allerta sugli accessi anomali)? Chi riceve gli alert e con quale reperibilità?
 - Esiste un piano di risposta agli incidenti scritto? Chi ne fa parte, qual è la catena di escalation, quali sono i criteri e le azioni di contenimento (isolamento dei sistemi, blocco degli accessi)? Quando è stato aggiornato o testato l'ultima volta?
+
+**Notifica al Garante e clausole coi responsabili**
 - Chi decide se e cosa notificare al Garante, entro quale flusso interno, per rispettare le 72 ore dell'Art. 33? Avete un modello di notifica già predisposto e conoscete il canale di notifica online del Garante?
 - Negli accordi con i responsabili del trattamento (hosting, agenzie, fornitori SaaS, PSP) è prevista la clausola di data breach, con l'obbligo di segnalarvi l'incidente senza ingiustificato ritardo ed entro tempi certi (cfr. Art. 28 e Area E)?
+
+**Comunicazione agli interessati e cifratura**
 - Avete un criterio documentato per stabilire quando una violazione comporta un "rischio elevato" e quindi va comunicata agli interessati ex Art. 34? Avete un template di comunicazione con le azioni protettive che gli utenti possono adottare?
 - I dati personali a riposo sono cifrati (cfr. F-12)? La cifratura è la premessa dell'esenzione dalla comunicazione agli interessati ex Art. 34(3)(a).
+
+**Registro delle violazioni e indagine forense**
 - Tenete un registro di tutte le violazioni, incluse quelle che avete deciso di non notificare, con la motivazione della decisione (Art. 33(5))? È distinto dal registro dei trattamenti Art. 30?
 - In caso di incidente, quali log avete a disposizione per l'indagine forense e per quanto tempo li conservate (dove, quando, come, quali dati, quali utenti coinvolti)? Esiste una procedura di analisi delle cause e di aggiornamento delle misure a valle dell'incidente?
+
+**Governance, storico e coperture**
 - Riesaminate periodicamente l'andamento delle violazioni nel tempo (trend, ricorrenze) e portate gli esiti al vertice aziendale perché si traducano in obiettivi e azioni correttive?
 - Avete già subito violazioni o incidenti di sicurezza? Come li avete gestiti: notifica al Garante ex Art. 33, comunicazione agli interessati ex Art. 34, misure correttive adottate?
 - Avete una copertura assicurativa cyber o un fornitore di incident response e forensics attivabile in emergenza?

@@ -25,15 +25,24 @@
 
 **Domande al cliente (Area N)**
 
+**Prospezione e consenso**
 - Fate chiamate in uscita a fini commerciali o di prospezione? Verso consumatori (B2C), professionisti (B2B) o entrambi?
 - Le chiamate sono interamente automatizzate (sistema senza operatore, voice bot, IVR conversazionale) o c'è sempre un operatore umano?
 - Come è stato raccolto il consenso dei numeri che chiamate? Dove conservate la prova, per ciascun contatto?
 - Consultate il Registro Pubblico delle Opposizioni prima di ogni campagna? Con quale frequenza rifate il filtraggio? Trattate l'iscrizione al RPO come revoca dei consensi precedenti?
+
+**Trasparenza e registrazione delle chiamate**
 - Il bot dichiara di essere un sistema automatico a inizio chiamata? Con quale formula e in quali secondi? L'annuncio viene ripetuto a ogni richiamo?
 - Registrate le chiamate? Per quali finalità, con quale informativa preventiva e per quanto tempo conservate audio e trascrizioni? Chi può riascoltarle?
 - Usate le registrazioni per addestrare o migliorare il modello, con revisione o etichettatura umana? Su quale base giuridica?
+
+**Opt-out e diritti dell'interessato**
 - Come gestite il rifiuto espresso in chiamata? Il bot riconosce l'opt-out a voce e via tasto? La conferma è immediata? L'opt-out si propaga a tutte le campagne e a una lista di soppressione centralizzata?
+
+**Biometria vocale e decisioni automatizzate**
 - Usate la voce per identificare o autenticare la persona (impronta vocale)? Dove vengono generati e conservati i voice model? Offrite un'alternativa non biometrica?
 - Il bot attribuisce punteggi o prende decisioni che incidono sulla persona (scoring, rifiuto pratica, credito, assicurazione)? C'è intervento umano e possibilità di contestare?
+
+**DPIA, hosting e fornitori**
 - Avete svolto una DPIA per il sistema vocale?
 - Dove sono ospitati audio, trascrizioni e CRM? Avete firmato il DPA con il fornitore del voice bot?

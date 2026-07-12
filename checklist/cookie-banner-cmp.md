@@ -29,26 +29,26 @@
 
 **Domande al cliente (Area D)**
 
-CMP e configurazione
+**CMP e configurazione**
 - Quale CMP (Consent Management Platform) usate: Iubenda, OneTrust, Cookiebot, CookieYes, Usercentrics, soluzione custom? Chi la configura e chi la mantiene aggiornata? (rileva per l'intera Area D)
 - Il banner è stato personalizzato rispetto al template di default della CMP? Da chi (agenzia, interno, sviluppatore) e con quale revisione legale? (i default delle CMP non sono sempre conformi al Garante)
 - La CMP blocca effettivamente gli script "a monte" finché l'utente non sceglie, o si limita a mostrare un avviso mentre i tracker partono comunque? (D-01, incrocio con Area C)
 
-Comportamento e design
+**Comportamento e design**
 - Avete mai fatto A/B test sul banner o ottimizzato per l'acceptance rate? Con quali metriche? (ottimizzare per far accettare è un indicatore di rischio dark pattern, D-02 e D-10)
 - Il pulsante "Rifiuta tutto" è presente al primo livello del banner con la stessa evidenza di "Accetta tutto", anche su mobile? Come è etichettato? (D-02, D-12, D-15)
 - Il pulsante "Accetta" compare una sola volta o è ripetuto in più punti del banner rispetto al "Rifiuta"? (D-16)
 - Cosa succede se l'utente chiude il banner con la X o continua a navigare senza scegliere: i tracker partono comunque? (D-03)
 
-Memorizzazione, revoca e segnali
+**Memorizzazione, revoca e segnali**
 - Dove e per quanto tempo conservate la scelta dell'utente (consenso e rifiuto)? Il banner ricompare a ogni visita o rispettate un periodo di conservazione della scelta (indicazione 6 mesi)? (D-09, D-13)
 - Esiste un punto di accesso permanente (link o icona nel footer) per riaprire le preferenze e revocare il consenso in ogni momento? (D-08)
 - Rispettate segnali automatizzati come Global Privacy Control (GPC) o Do Not Track (DNT) inviati dal browser? (D-08, D-13)
 
-Informazione e lingua
+**Informazione e lingua**
 - Il banner mostra una sintesi delle finalità al primo livello con link alla cookie policy estesa, e specifica i mezzi concreti per rifiutare? (D-11)
 - In quali lingue sono disponibili banner e informativa? Sono coerenti con la lingua del sito e del pubblico a cui vi rivolgete? (D-17)
 
-Accesso e modelli di business
+**Accesso e modelli di business**
 - Il contenuto del sito è accessibile anche a chi rifiuta i tracker, o esiste un blocco (cookie wall)? Offrite un'alternativa a pagamento al consenso (modello consent-or-pay)? (D-06)
 - Adottate il framework IAB TCF (Transparency and Consent Framework) con lista di fornitori? In tal caso, la granularità del consenso è gestita anche per singolo fornitore? (D-05)

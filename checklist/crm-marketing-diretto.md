@@ -26,11 +26,19 @@
 | K-14 | Preference center granulare accessibile al cliente: scelta per canale (email, SMS, telefono), per finalità e per condivisione con partner | La revoca e l'opposizione devono essere agevoli quanto il conferimento; la scelta granulare aumenta fiducia e conformità. Art. 7(3) e Art. 21 GDPR [S41] | RACCOMANDATO | BASSO | 🟡 | Verifica della presenza e del funzionamento del centro preferenze; test di modifica granulare delle scelte |
 
 **Domande al cliente (Area K)**
+
+**Strumenti e provenienza delle liste**
 - Fate email marketing, newsletter, lead generation o usate un CRM? Con quali strumenti (CRM e piattaforma di invio)?
 - Come è stata costruita la lista di contatti: iscrizioni dirette, soft spam su clienti esistenti, liste acquistate, raccolta da web o social?
+
+**Consenso e basi giuridiche**
 - Il consenso raccolto sul sito confluisce nel CRM con la sua prova (data, ora, metodo, versione dell'informativa)?
 - Distinguete i contatti B2C (consenso) dai B2B (legittimo interesse)? Per il B2B avete un bilanciamento (LIA) documentato?
+
+**Opt-out e retention**
 - Quando un contatto si disiscrive, l'opt-out si propaga a tutti i sistemi collegati? Mantenete una lista di soppressione che resiste ai reimport?
 - Che retention applicate a lead, prospect e clienti cessati? Chi cancella o anonimizza i contatti inattivi, e dopo quanto tempo?
+
+**Condivisione con partner e accessi al CRM**
 - Condividete dati con partner commerciali? Con quale base giuridica e con quale consenso raccolto?
 - Chi ha accesso al CRM e con quali permessi? Esiste un profilo di accesso differenziato per ruolo con log degli accessi?

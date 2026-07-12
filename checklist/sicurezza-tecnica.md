@@ -26,14 +26,22 @@
 **Nota di ingaggio**: i check F-08 e F-11 vanno eseguiti solo con autorizzazione scritta del cliente all'assessment. Nessun test intrusivo oltre probe passivi senza mandato esplicito. I check F-12, F-13, F-14, F-15 e F-16 riguardano il back-end e i processi: non sono osservabili dalla scansione web e vanno riscontrati per via documentale in intake.
 
 **Domande al cliente (Area F)**
+
+**Infrastruttura e patching**
 - Chi gestisce l'infrastruttura (interno, agenzia, hosting gestito)? Chi ha accesso privilegiato ai server e al database?
 - Esiste un processo di patching del CMS, del framework e dei plugin? Con quale SLA per le patch di sicurezza critiche (es. entro 48 ore) e chi ne è responsabile?
+- Il sito serve i font da una CDN esterna (Google Fonts remoto) o li ospita in locale? Usa un CAPTCHA di terze parti su login e form?
+
+**Cifratura, backup e minimizzazione**
 - I dati personali sono cifrati a riposo (database, file store)? Con quale algoritmo (es. AES-256) e come sono gestite le chiavi? La stessa cifratura si applica ai backup?
 - Dove sono conservati i backup, in quante posizioni, con quale frequenza sono testati i ripristini? La cancellazione di un dato viene propagata anche ai backup, ed entro quanto?
+- Dove applicate pseudonimizzazione o anonimizzazione (analytics, log, ambienti di test e sviluppo, reporting)? Come è gestita la separazione delle informazioni che consentono la re-identificazione?
+
+**Password e controlli di accesso**
 - Come sono conservate le password degli account utente e amministratore (algoritmo di hashing: bcrypt, scrypt, Argon2)? È attiva l'autenticazione a più fattori sugli account privilegiati?
 - Esiste un modello dei ruoli e dei permessi a privilegio minimo? Gli accessi ai dati e le operazioni amministrative sono tracciati in log, e per quanto tempo sono conservati?
-- Il sito serve i font da una CDN esterna (Google Fonts remoto) o li ospita in locale? Usa un CAPTCHA di terze parti su login e form?
-- Dove applicate pseudonimizzazione o anonimizzazione (analytics, log, ambienti di test e sviluppo, reporting)? Come è gestita la separazione delle informazioni che consentono la re-identificazione?
+
+**Incidenti, audit e formazione**
 - Avete mai avuto un data breach o un incidente di sicurezza? È stato notificato al Garante ex Art. 33 e, se dovuto, comunicato agli interessati ex Art. 34?
 - Eseguite audit di sicurezza o penetration test periodici? Con quale cadenza e da chi?
 - Il personale che tratta dati personali riceve formazione sulla protezione dei dati (Art. 32 e Art. 39)?
