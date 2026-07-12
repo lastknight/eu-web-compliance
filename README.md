@@ -192,7 +192,7 @@ Risk (CRITICO / ALTO / MEDIO / BASSO) then says how exposed you are in practice,
 
 ## Design principles
 
-- **Stable IDs, forever.** This is a hard covenant, not a style choice: people cite these IDs in client reports, tickets and commits, and changing them would pull the rug from under every project that relies on them. An ID is never recycled, renumbered or reordered: `O-18` stays `O-18` for life, even if deprecated (deprecated checks are marked DEPRECATED and kept, never deleted). New checks take the next number at the end of their area; if one must logically sit between two existing checks, it gets a suffix (`O-18-bis`, then `O-18-ter`), never a renumbering of what follows. The same covenant applies to source IDs: an `S`/`N`/`G`/`E`/`J`/`T` identifier is never reassigned; a superseded source keeps its ID with a caveat in the catalog.
+- **Stable IDs, forever.** This is a hard covenant, not a style choice: people cite these IDs in client reports, tickets and commits, and changing them would pull the rug from under every project that relies on them. An ID is never recycled, renumbered or reordered: `O-18` stays `O-18` for life, even if deprecated (deprecated checks are marked DEPRECATED and kept, never deleted). New checks take the next number at the end of their area; if one must logically sit between two existing checks, it gets a dotted suffix (`O-18.1`, then `O-18.2`), never a renumbering of what follows. The same covenant applies to source IDs: an `S`/`N`/`G`/`E`/`J`/`T` identifier is never reassigned; a superseded source keeps its ID with a caveat in the catalog.
 - **Sources or it did not happen.** Legal statements trace to primary law, authorities and case law. The catalog lists every source with provenance, date and known caveats, including the ones we ingested and found to be partly wrong.
 - **Vendor neutral.** Tools are referenced (the EDPB's own auditing tool, the EDPS evidence collector, Playwright, testssl.sh), never imposed. Map the tests to your own stack if you have one.
 - **Conditional by construction.** Obligations that only apply to platforms, marketplaces or gatekeepers are gated, not mixed in. A corporate brochure site is not a VLOP and this checklist knows it.
@@ -206,7 +206,7 @@ The most valuable contributions are legal and factual, not code:
 - **A check that is wrong or outdated** (the law changed, a decision superseded a practice): open an issue with the "Check correction" template, citing the check ID and your source.
 - **Translations and clarity fixes**: pull requests welcome.
 
-Ground rules: check and source IDs are immutable, forever (insertions use `-bis` suffixes, deprecations keep the ID: see Design principles); legal claims need a citable source; vendor sources never ground a legal statement alone.
+Ground rules: check and source IDs are immutable, forever (insertions use dotted suffixes like `O-18.1`, deprecations keep the ID: see Design principles); legal claims need a citable source; vendor sources never ground a legal statement alone.
 
 ## Roadmap
 
