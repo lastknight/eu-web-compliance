@@ -1,6 +1,6 @@
 # Changelog
 
-Check IDs are immutable: never recycled, never renumbered. Deprecated checks are marked, not deleted.
+Check and source IDs are immutable, forever: never recycled, never renumbered, never reordered. Deprecated items keep their ID and are marked, not deleted. Insertions between existing checks use suffixes (`O-18-bis`, `O-18-ter`), never renumbering.
 
 ## Public release (2026-07-12)
 
