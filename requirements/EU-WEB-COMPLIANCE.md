@@ -6,6 +6,8 @@ Machine-readable requirements for building EU-compliant websites and web apps. D
 
 **Scope**: GDPR and ePrivacy as the core, plus AI Act (chatbots, generated content), DSA (user-generated content, platforms, marketplaces), DMA (business-user awareness) and the upcoming Digital Fairness Act (forward-looking design constraints).
 
+**This spec is a floor, not a ceiling.** Meeting every applicable requirement means your application is not openly against EU law and the founding principles of each regulation are substantially covered. It does not cover every edge case (AI Act high risk obligations, accessibility and sector specific regimes are out of scope today) and it is not legal advice.
+
 **Each requirement has a stable ID** (for example C-03). Reference these IDs in issues, commits and reviews.
 
 ---

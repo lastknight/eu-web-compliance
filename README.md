@@ -1,7 +1,7 @@
 # EU Web Compliance
 
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-2.0-blue">
+  <img alt="Version" src="https://img.shields.io/badge/version-2.1-blue">
   <img alt="Checks" src="https://img.shields.io/badge/checks-206-brightgreen">
   <img alt="Areas" src="https://img.shields.io/badge/areas-15-brightgreen">
   <img alt="Sources" src="https://img.shields.io/badge/sources-35_catalogued-orange">
@@ -10,6 +10,8 @@
   <img alt="License" src="https://img.shields.io/badge/license-CC_BY_4.0_%2B_MIT_(planned)-yellow">
   <img alt="AI agent ready" src="https://img.shields.io/badge/AI_agent-ready-black">
 </p>
+
+> 🌍 This document is also available in [Italiano](README.it.md).
 
 **Doing business in the EU is hard.** Not because the rules are hostile, but because there are so many of them, layered and interlocking: GDPR, ePrivacy, the AI Act, the DSA, the DMA, and more on the way. Knowing that body of law well is a full time job, and the cost of not knowing it falls hardest on those who cannot afford a compliance department.
 
@@ -21,11 +23,12 @@ This project exists to close that gap, for three audiences:
 
 It covers GDPR and ePrivacy at the core, and extends to the AI Act (chatbots, generated content), the DSA (user generated content, platforms, marketplaces), the DMA (your rights as a business user of Big Tech) and the upcoming Digital Fairness Act (deceptive design, forward looking).
 
-> **Status**: private preview. Checklist text is currently in Italian, requirements are in English. Full English translation of the checklist is on the roadmap before public release.
+> **Status**: private preview. English is the canonical language; every checklist area and the interview kit are also available in Italian (the `.it.md` files, linked as "it" in the index below). More languages welcome via PR.
 
 ## Table of contents
 
 - [Why this exists](#why-this-exists)
+- [What this is not: honest limits](#what-this-is-not-honest-limits)
 - [What you have in your hands](#what-you-have-in-your-hands)
 - [📖 Read the documents, one click each](#-read-the-documents-one-click-each)
 - [Where to start](#where-to-start)
@@ -53,6 +56,16 @@ Most GDPR checklists are either legal essays with nothing testable, or technical
 
 It was built by consolidating and rewriting 1,075 requirements extracted from those sources, then verifying every legal reference. The source catalog, including known weaknesses of each source, is in [`sources/SOURCES.md`](sources/SOURCES.md).
 
+## What this is not: honest limits
+
+This catalog is exhaustive, in places even overabundant. It is still not complete, and it cannot be. Stating this plainly is part of the method.
+
+- **It does not cover every case and every edge case.** The corpus of EU digital law is vast, moving, and interpreted differently across member states. Known gaps today, named explicitly: the **AI Act** is covered only for what touches a website or web app (transparency duties, basic risk classification); the obligations of providers and deployers of high risk systems are out of scope, with pointers only. **Dark patterns** are tested at taxonomy level (the EDPB and CNIL categories), not case by case against every possible manipulative design. **Accessibility** (the European Accessibility Act, the Web Accessibility Directive) is currently absent altogether, and it is a real compliance surface. Sector specific regimes (health, finance, telco) and national divergences beyond Italy and France are mostly out.
+- **What it guarantees is a floor, not a ceiling.** This system is the best compromise its authors managed to reach: following it means your application is not *openly against the law*, and that the founding principles of each regulation (consent that is real, transparency that is honest, data that is minimized, rights that work) are substantially covered. It does not mean "fully compliant in every possible reading": nobody can honestly promise that, and you should distrust anyone who does.
+- **It is not a certification and not legal advice.** It is a compliance engineering tool that makes the conversation with your lawyer shorter and better informed, not one that replaces it.
+
+The gaps are not a secret to be discovered: they are an invitation. If you know a case this catalog misses, open an issue or a PR (see [Contributing](#contributing)): that is exactly how this project is meant to grow.
+
 ## What you have in your hands
 
 | Piece | What it is | Who it is for |
@@ -71,33 +84,33 @@ It was built by consolidating and rewriting 1,075 requirements extracted from th
 
 No downloads, no tools, no git: every link below opens the document in your browser, rendered like a normal web page. This is the index for lawyers, DPOs, auditors and analysts.
 
-**The checklist, area by area** (in Italian):
+**The checklist, area by area:**
 
 | Area | Read | What it covers |
 |:---:|------|----------------|
-| A | [Documenti legali: presenza e raggiungibilità](checklist/documenti-legali-presenza.md) | Privacy and cookie policy exist, are reachable, versioned, in the right language |
-| B | [Contenuto dell'informativa (Art. 13/14)](checklist/contenuto-informativa.md) | Everything the privacy notice must contain, and whether it matches technical reality |
-| C | [Cookie e tracker pre-consenso](checklist/cookie-tracker-pre-consenso.md) | Nothing may track the user before consent: cookies, pixels, storage, fingerprinting |
-| D | [Cookie banner e CMP](checklist/cookie-banner-cmp.md) | Banner design and behaviour: reject at first layer, no dark patterns, real revocation |
-| E | [Terze parti e trasferimenti extra-UE](checklist/terze-parti-trasferimenti.md) | Who receives data, where they are, contracts and transfer safeguards |
-| F | [Sicurezza tecnica (Art. 32)](checklist/sicurezza-tecnica.md) | HTTPS, TLS, security headers, cookie flags, exposed files, email authentication |
-| G | [Form, raccolta dati e consensi](checklist/form-raccolta-consensi.md) | Every point where the site collects data: consent quality, minimization, minors |
-| H | [Diritti degli interessati](checklist/diritti-interessati.md) | Access, deletion, portability, objection: channels that exist and actually work |
-| I | [Governance e accountability](checklist/governance-accountability-ciclo-vita.md) | Records of processing, DPO, DPIA, retention policies, training |
-| J | [Violazioni dei dati (breach)](checklist/violazioni-dati-breach.md) | Detection, response plan, 72 hour notification, breach register |
-| K | [CRM, newsletter e marketing diretto](checklist/crm-marketing-diretto.md) | *If they do email marketing / CRM*: consent lifecycle, opt out, list hygiene, retention |
-| L | [E-commerce](checklist/ecommerce.md) | *If they sell online*: accounts, payments, post purchase marketing, loyalty profiling |
-| M | [Funzionalità AI sul sito](checklist/ai-act-sito.md) | *If chatbot / AI features*: AI Act transparency, GDPR on LLMs, automated decisions |
-| N | [Canali voce e chiamate automatizzate](checklist/canali-voce.md) | *If outbound calls / voice bots*: consent, recordings, the bot must say it is a bot |
-| O | [Oltre il GDPR: DSA, DMA, DFA](checklist/dsa-dma-dfa.md) | *If user content / marketplace*: platform duties, gatekeeper rights, what is coming |
+| A | [Legal documents: presence and reachability](checklist/legal-documents.md) · [it](checklist/legal-documents.it.md) | Privacy and cookie policy exist, are reachable, versioned, in the right language |
+| B | [Privacy notice content (Art. 13/14)](checklist/privacy-notice-content.md) · [it](checklist/privacy-notice-content.it.md) | Everything the privacy notice must contain, and whether it matches technical reality |
+| C | [Pre-consent cookies and trackers](checklist/pre-consent-trackers.md) · [it](checklist/pre-consent-trackers.it.md) | Nothing may track the user before consent: cookies, pixels, storage, fingerprinting |
+| D | [Cookie banner and CMP](checklist/cookie-banner-cmp.md) · [it](checklist/cookie-banner-cmp.it.md) | Banner design and behavior: reject at first layer, no dark patterns, real revocation |
+| E | [Third parties and extra-EU transfers](checklist/third-parties-transfers.md) · [it](checklist/third-parties-transfers.it.md) | Who receives data, where they are, contracts and transfer safeguards |
+| F | [Technical security (Art. 32)](checklist/technical-security.md) · [it](checklist/technical-security.it.md) | HTTPS, TLS, security headers, cookie flags, exposed files, email authentication |
+| G | [Forms, data collection and consent](checklist/forms-and-consent.md) · [it](checklist/forms-and-consent.it.md) | Every point where the site collects data: consent quality, minimization, minors |
+| H | [Data subject rights](checklist/data-subject-rights.md) · [it](checklist/data-subject-rights.it.md) | Access, deletion, portability, objection: channels that exist and actually work |
+| I | [Governance and accountability](checklist/governance-accountability.md) · [it](checklist/governance-accountability.it.md) | Records of processing, DPO, DPIA, retention policies, training |
+| J | [Data breaches](checklist/data-breaches.md) · [it](checklist/data-breaches.it.md) | Detection, response plan, 72 hour notification, breach register |
+| K | [CRM, newsletters and direct marketing](checklist/crm-direct-marketing.md) · [it](checklist/crm-direct-marketing.it.md) | *If they do email marketing / CRM*: consent lifecycle, opt out, list hygiene, retention |
+| L | [E-commerce](checklist/ecommerce.md) · [it](checklist/ecommerce.it.md) | *If they sell online*: accounts, payments, post purchase marketing, loyalty profiling |
+| M | [AI features on the site](checklist/ai-features.md) · [it](checklist/ai-features.it.md) | *If chatbot / AI features*: AI Act transparency, GDPR on LLMs, automated decisions |
+| N | [Voice channels and automated calls](checklist/voice-channels.md) · [it](checklist/voice-channels.it.md) | *If outbound calls / voice bots*: consent, recordings, the bot must say it is a bot |
+| O | [Beyond GDPR: DSA, DMA, DFA](checklist/dsa-dma-dfa.md) · [it](checklist/dsa-dma-dfa.it.md) | *If user content / marketplace*: platform duties, gatekeeper rights, what is coming |
 
 **The companion documents:**
 
 | Read | What it is |
 |------|-----------|
-| [Il questionario d'intervista](interview/intervista-intake.md) | The three tier client interview kit (gates first, most answers prefilled) |
-| [Il catalogo delle fonti](sources/SOURCES.md) | Every source behind the checks: law, authorities, case law, with caveats |
-| [I requirements per sviluppatori](requirements/EU-WEB-COMPLIANCE.md) | The developer / AI agent version (English, technical) |
+| [The client interview kit](interview/client-interview.md) · [it](interview/client-interview.it.md) | The three tier questionnaire (gates first, most answers prefilled) |
+| [The source catalog](sources/SOURCES.md) | Every source behind the checks: law, authorities, case law, with caveats |
+| [The developer requirements](requirements/EU-WEB-COMPLIANCE.md) | The developer / AI agent version (technical, RFC 2119) |
 | [Changelog](CHANGELOG.md) | What changed between versions; check IDs never change |
 
 ---
@@ -155,7 +168,7 @@ site cannot show         prefill from evidence     with evidence             dec
 
 **1. The gates, first.** 10 to 16 **gate questions** to the client before anything else (five minutes, phone or email): Do you send newsletters? Do you sell online? Do you run a CRM? Any chatbot? Outbound calls? User generated content? Every "no" switches off an entire area, and every "yes" tells the scan about properties the website alone would never reveal. A brochure site without marketing typically activates well under half of the catalog.
 
-**2. First pass: the scan (Run 1).** An automated pass over the target site, its perimeter informed by the gate answers, collects evidence: cookies and trackers before consent, banner behaviour, security headers, third party domains, forms. This answers a big slice of the questionnaire by itself ("which consent tool do you use?", "is Google Analytics active?"): those answers get **prefilled with evidence attached**, and the client only confirms or corrects them.
+**2. First pass: the scan (Run 1).** An automated pass over the target site, its perimeter informed by the gate answers, collects evidence: cookies and trackers before consent, banner behavior, security headers, third party domains, forms. This answers a big slice of the questionnaire by itself ("which consent tool do you use?", "is Google Analytics active?"): those answers get **prefilled with evidence attached**, and the client only confirms or corrects them.
 
 **3. The interview.** What remains is a 20 to 40 question conversation, organized per area, with stable IDs (`Q-C-03`). The interview document is also the **exchange format**: fill in the answers, feed the document back.
 
@@ -200,7 +213,7 @@ Ground rules: check IDs are immutable; legal claims need a citable source; vendo
 - [x] Checklist v2.0: 15 areas, 206 checks, full source catalog
 - [x] English requirements file for AI assisted development
 - [x] Three tier interview kit
-- [ ] Full English translation of the checklist
+- [x] English as canonical language, Italian editions as `.it.md`
 - [ ] `skill/`: the automated Run 1 / Run 2 (crawler + agent skill for Claude Code and compatible tools)
 - [ ] Public release
 
