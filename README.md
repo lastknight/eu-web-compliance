@@ -21,6 +21,7 @@ It covers GDPR and ePrivacy at the core, and extends to the AI Act (chatbots, ge
 
 - [Why this exists](#why-this-exists)
 - [What you have in your hands](#what-you-have-in-your-hands)
+- [📖 Read the documents, one click each](#-read-the-documents-one-click-each)
 - [Where to start](#where-to-start)
   - [🧑‍💻 I am a developer](#-i-am-a-developer-and-i-know-nothing-about-eu-law)
   - [⚖️ I am a lawyer or a DPO](#%EF%B8%8F-i-am-a-lawyer-or-a-dpo-and-i-do-not-use-ai-agents-or-github)
