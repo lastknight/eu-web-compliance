@@ -11,7 +11,13 @@
   <img alt="AI agent ready" src="https://img.shields.io/badge/AI_agent-ready-black">
 </p>
 
-**A practical map for running a legal digital business in the EU.** One checklist, three ways to use it: audit an existing website, interview a client without drowning them, or hand it to an AI coding agent so compliance gets built in from the first commit.
+**Doing business in the EU is hard.** Not because the rules are hostile, but because there are so many of them, layered and interlocking: GDPR, ePrivacy, the AI Act, the DSA, the DMA, and more on the way. Knowing that body of law well is a full time job, and the cost of not knowing it falls hardest on those who cannot afford a compliance department.
+
+This project exists to close that gap, for three audiences:
+
+- **Auditors and consultants**, the first intended audience: a 360 degree view of a company's compliance posture, with a method that funnels 206 checks into a manageable, evidence driven engagement instead of an interrogation.
+- **Lawyers and DPOs**: a sourced, article by article reference to draw on, where every claim traces to primary law, regulator guidance or case law, and never to someone's blog.
+- **Developers**: a ready made spec file to feed to AI assisted coding tools. Compliance stops being a retrofit that costs days if not months of rework: privacy by design and by default get adopted from the very first commit, without reading a single article of law.
 
 It covers GDPR and ePrivacy at the core, and extends to the AI Act (chatbots, generated content), the DSA (user generated content, platforms, marketplaces), the DMA (your rights as a business user of Big Tech) and the upcoming Digital Fairness Act (deceptive design, forward looking).
 
