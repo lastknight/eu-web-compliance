@@ -11,7 +11,7 @@
   <img alt="AI agent ready" src="https://img.shields.io/badge/AI_agent-ready-black">
 </p>
 
-**🌐 [Read it as a page → lastknight.github.io/eu-web-compliance](https://lastknight.github.io/eu-web-compliance/)**
+**🌐 [Read it as a page → euwebcompliance.mgpf.it](https://euwebcompliance.mgpf.it/)**
 
 > 🌍 This document is also available in [Italiano](README.it.md).
 
