@@ -11,6 +11,8 @@
   <img alt="AI agent ready" src="https://img.shields.io/badge/AI_agent-ready-black">
 </p>
 
+**🌐 [Read it as a page → lastknight.github.io/eu-web-compliance](https://lastknight.github.io/eu-web-compliance/)**
+
 > 🌍 This document is also available in [Italiano](README.it.md).
 
 **Doing business in the EU is hard.** Not because the rules are hostile, but because there are so many of them, layered and interlocking: GDPR, ePrivacy, the AI Act, the DSA, the DMA, and more on the way. Knowing that body of law well is a full time job, and the cost of not knowing it falls hardest on those who cannot afford a compliance department.
