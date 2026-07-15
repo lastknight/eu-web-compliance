@@ -54,6 +54,18 @@ node scan.js --url https://example.com
 node scan.js --url https://example.com --only clean,refuse
 ```
 
+### A visual report
+
+`render.js` turns any `scan-report.json` into a self-contained, theme-aware HTML report
+(verdicts read at a glance, severity stripes, fails first):
+
+```bash
+node render.js ./scan-output/scan-report.json           # writes ./scan-output/report.html
+node render.js ./scan-output/scan-report.json --out r.html
+```
+
+Open `report.html` in a browser — no assets, no network, works offline.
+
 Output in `--out`:
 
 - `scan-report.json` — machine-readable report (gates, per-scenario summary, verdicts, prefill, evidence manifest)
@@ -82,6 +94,7 @@ Collector, testssl.sh, Blacklight.
 
 ```
 scan.js              CLI entry
+render.js            scan-report.json → self-contained HTML report
 lib/
   gates.js           gate answers → active areas + perimeter
   scenarios.js       the four-scenario runner
