@@ -1,6 +1,9 @@
 # Automation skill (in development)
 
-The automated layer of the method:
+The automated layer of the method. **Run 1 (the scanner) is implemented** — see
+[`scanner/`](scanner/); gate resolution, the four-scenario scan, the immutable evidence
+bundle, the Area C/D verdicts and the level-0 prefill all work today. Run 2 (verification)
+and the Claude Code skill wrapper are next.
 
 - **Entry point: the gates.** The skill starts by asking (or receiving) the 16 gate questions, each answered **yes / no / don't know**. "Don't know" is a first class answer: it keeps the area active in conservative mode, flags the question for the interview, and asks the scan to try to inform it. Only an explicit "no" switches an area off. URL-only mode (zero gate answers) is supported as degraded triage: every gate the scan cannot observe stays open and marked "to ask".
 - **Run 1**: Playwright based scan of the target site (clean profile, pre/post consent scenarios), its perimeter informed by the gate answers, evidence as immutable JSON (HAR, cookie jar, storage, screenshots), output = the interview questionnaire prefilled with evidence.

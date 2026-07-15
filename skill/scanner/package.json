@@ -1,0 +1,13 @@
+{
+  "name": "eu-web-compliance-scanner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Run 1 evidence scanner for the EU Web Compliance method — pre/post-consent Playwright scan producing an immutable evidence bundle and a prefilled interview questionnaire.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "euwc-scan": "./scan.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "playwright": "^1.48.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "_comment": "Level-1 gate answers. Each value is yes | no | dontknow. Omit a gate to leave it 'to ask'. 'dontknow' keeps the area active in conservative mode and flags it for the interview; only an explicit 'no' switches an area off. See ../../interview/client-interview.md for the full gate list.",
+  "Q-G-01": "yes",
+  "Q-G-02": "dontknow",
+  "Q-B-11": "yes",
+  "Q-L-01": "no",
+  "Q-A-05": "no",
+  "Q-G-10": "no",
+  "Q-I-04": "yes",
+  "Q-B-08": "dontknow",
+  "Q-B-05": "yes",
+  "Q-M-01": "no",
+  "Q-N-01": "no",
+  "Q-O-02": "no",
+  "Q-B-13": "yes",
+  "Q-I-01": "yes",
+  "Q-I-08": "no",
+  "Q-D-13": "dontknow"
+}

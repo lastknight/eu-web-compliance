@@ -1,0 +1,112 @@
+{
+  "version": "0.1.0",
+  "note": "CMP fingerprints and consent controls. 'detect' matches by global JS variable, script host, or DOM selector. 'accept'/'reject'/'manage' are ordered selector candidates tried in turn. IAB TCF CMPs expose __tcfapi; the TC String is read from the euconsent-v2 cookie or via the API. Extensible via PR.",
+  "cmps": [
+    {
+      "id": "onetrust",
+      "name": "OneTrust",
+      "detect": { "globals": ["OneTrust", "OnetrustActiveGroups"], "hosts": ["cdn.cookielaw.org", "cookie-cdn.cookiepro.com", "optanon.blob.core.windows.net"], "selectors": ["#onetrust-banner-sdk", "#onetrust-consent-sdk"] },
+      "accept": ["#onetrust-accept-btn-handler", "button#accept-recommended-btn-handler"],
+      "reject": ["#onetrust-reject-all-handler", ".onetrust-close-btn-handler.banner-close-button", "button.ot-pc-refuse-all-handler"],
+      "manage": ["#onetrust-pc-btn-handler", "button.ot-sdk-show-settings"],
+      "consentCookie": ["OptanonConsent", "OptanonAlertBoxClosed"]
+    },
+    {
+      "id": "cookiebot",
+      "name": "Cookiebot (Usercentrics)",
+      "detect": { "globals": ["Cookiebot", "CookieConsent"], "hosts": ["consent.cookiebot.com", "consent.cookiebot.eu"], "selectors": ["#CybotCookiebotDialog"] },
+      "accept": ["#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll", "#CybotCookiebotDialogBodyButtonAccept"],
+      "reject": ["#CybotCookiebotDialogBodyButtonDecline"],
+      "manage": ["#CybotCookiebotDialogBodyLevelButtonCustomize", "#CybotCookiebotDialogBodyButtonDetails"],
+      "consentCookie": ["CookieConsent"]
+    },
+    {
+      "id": "iubenda",
+      "name": "Iubenda",
+      "detect": { "globals": ["_iub"], "hosts": ["cdn.iubenda.com", "cs.iubenda.com"], "selectors": ["#iubenda-cs-banner", ".iubenda-cs-container"] },
+      "accept": [".iubenda-cs-accept-btn", "#iubFooterBtn"],
+      "reject": [".iubenda-cs-reject-btn", "#iubFooterBtnIab"],
+      "manage": [".iubenda-cs-customize-btn", ".iubenda-cs-cookie-policy-lnk"],
+      "consentCookie": ["_iub_cs-", "euconsent-v2"]
+    },
+    {
+      "id": "usercentrics",
+      "name": "Usercentrics",
+      "detect": { "globals": ["UC_UI", "usercentrics"], "hosts": ["app.usercentrics.eu", "web.cmp.usercentrics.eu", "api.usercentrics.eu"], "selectors": ["#usercentrics-root", "#uc-center-container"] },
+      "accept": ["button[data-testid='uc-accept-all-button']", "[data-testid='uc-accept-all-button']"],
+      "reject": ["button[data-testid='uc-deny-all-button']", "[data-testid='uc-deny-all-button']"],
+      "manage": ["button[data-testid='uc-more-button']", "[data-testid='uc-customize-button']"],
+      "consentCookie": ["uc_settings", "usercentrics"]
+    },
+    {
+      "id": "quantcast",
+      "name": "Quantcast Choice / Sourcepoint (TCF)",
+      "detect": { "globals": ["__tcfapi", "__cmp"], "hosts": ["quantcast.mgr.consensu.org", "cmp.quantcast.com", "cdn.privacy-mgmt.com"], "selectors": [".qc-cmp2-container", "#qc-cmp2-ui"] },
+      "accept": ["button[mode='primary']", ".qc-cmp2-summary-buttons button[mode='primary']"],
+      "reject": ["button[mode='secondary']", ".qc-cmp2-summary-buttons button[mode='secondary']"],
+      "manage": [".qc-cmp2-footer button[mode='link']"],
+      "consentCookie": ["euconsent-v2"]
+    },
+    {
+      "id": "didomi",
+      "name": "Didomi (TCF)",
+      "detect": { "globals": ["Didomi", "__tcfapi"], "hosts": ["sdk.privacy-center.org", "api.privacy-center.org"], "selectors": ["#didomi-host", ".didomi-popup-container"] },
+      "accept": ["#didomi-notice-agree-button", "button[aria-label='Agree']"],
+      "reject": ["#didomi-notice-disagree-button", "button[aria-label='Disagree']"],
+      "manage": ["#didomi-notice-learn-more-button", "button[aria-label='Configure']"],
+      "consentCookie": ["euconsent-v2", "didomi_token"]
+    },
+    {
+      "id": "cookieyes",
+      "name": "CookieYes",
+      "detect": { "globals": ["cookieyes"], "hosts": ["cdn-cookieyes.com"], "selectors": [".cky-consent-container", ".cky-modal"] },
+      "accept": ["[data-cky-tag='accept-button']", ".cky-btn-accept"],
+      "reject": ["[data-cky-tag='reject-button']", ".cky-btn-reject"],
+      "manage": ["[data-cky-tag='settings-button']", ".cky-btn-customize"],
+      "consentCookie": ["cookieyes-consent"]
+    },
+    {
+      "id": "complianz",
+      "name": "Complianz (WordPress)",
+      "detect": { "globals": ["cmplz_banner_status"], "hosts": [], "selectors": ["#cmplz-cookiebanner-container", ".cmplz-cookiebanner"] },
+      "accept": [".cmplz-accept", "button.cmplz-btn.cmplz-accept"],
+      "reject": [".cmplz-deny", "button.cmplz-btn.cmplz-deny"],
+      "manage": [".cmplz-manage-options", "button.cmplz-btn.cmplz-manage-options"],
+      "consentCookie": ["cmplz_consented_services", "complianz_consent_status"]
+    },
+    {
+      "id": "termly",
+      "name": "Termly",
+      "detect": { "globals": ["Termly"], "hosts": ["app.termly.io", "cdn.termly.io"], "selectors": ["#termly-code-snippet-support", ".t-preference-modal"] },
+      "accept": ["[data-tid='banner-accept']", "button[aria-label='Accept all']"],
+      "reject": ["[data-tid='banner-decline']", "button[aria-label='Decline all']"],
+      "manage": ["[data-tid='banner-manage']"],
+      "consentCookie": ["TERMLY_API_CACHE"]
+    },
+    {
+      "id": "osano",
+      "name": "Osano",
+      "detect": { "globals": ["Osano"], "hosts": ["cmp.osano.com"], "selectors": [".osano-cm-dialog", ".osano-cm-window"] },
+      "accept": [".osano-cm-accept-all", "button.osano-cm-accept-all"],
+      "reject": [".osano-cm-denyAll", "button.osano-cm-deny"],
+      "manage": [".osano-cm-manage"],
+      "consentCookie": ["osano_consentmanager"]
+    },
+    {
+      "id": "google-fc",
+      "name": "Google Funding Choices / Ad Consent",
+      "detect": { "globals": ["googlefc", "__gpp"], "hosts": ["fundingchoicesmessages.google.com"], "selectors": [".fc-consent-root", ".fc-dialog-container"] },
+      "accept": [".fc-cta-consent", "button.fc-button.fc-cta-consent"],
+      "reject": [".fc-cta-do-not-consent", "button.fc-button.fc-cta-do-not-consent"],
+      "manage": [".fc-cta-manage-options"],
+      "consentCookie": ["FCCDCF"]
+    }
+  ],
+  "genericBanner": {
+    "note": "Fallback text-matching when no known CMP is fingerprinted. Case-insensitive. Language-aware for EN + IT.",
+    "containers": ["[id*='cookie']", "[class*='cookie']", "[id*='consent']", "[class*='consent']", "[aria-label*='cookie' i]", "[role='dialog']"],
+    "acceptText": ["accept all", "accept", "allow all", "agree", "got it", "i agree", "accetta tutto", "accetta", "acconsento", "ho capito", "consenti"],
+    "rejectText": ["reject all", "reject", "decline", "deny", "refuse", "necessary only", "rifiuta tutto", "rifiuta", "nega", "solo necessari", "continua senza accettare"],
+    "manageText": ["manage", "settings", "preferences", "customize", "customise", "options", "gestisci", "impostazioni", "preferenze", "personalizza"]
+  }
+}
