@@ -118,24 +118,46 @@ section { border-top: 1px solid var(--line); }
 .vlist li { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); }
 
 /* verdict cards */
-.checks { display: flex; flex-direction: column; gap: 9px; }
-.check { display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: 14px;
-  padding: 13px 16px 13px 14px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper);
+.checks { display: flex; flex-direction: column; gap: 12px; }
+.check { display: flex; flex-direction: column; gap: 12px;
+  padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper);
   border-left-width: 4px; }
 .check.pass { border-left-color: var(--pass); }
 .check.fail { border-left-color: var(--fail); }
 .check.warn { border-left-color: var(--warn); }
 .check.nobs { border-left-color: var(--nobs); }
-.cid { font-family: var(--mono); font-weight: 600; font-size: 13.5px; color: var(--ink);
-  padding-top: 1px; min-width: 44px; }
-.csum { font-size: 14px; color: var(--ink-soft); }
-.cev { font-family: var(--mono); font-size: 11.5px; color: var(--ink-faint); margin-top: 4px; word-break: break-all; }
+.check-top { display: grid; grid-template-columns: auto 1fr auto; align-items: start; gap: 12px; }
+.cid { font-family: var(--mono); font-weight: 700; font-size: 13.5px; color: var(--ink);
+  padding-top: 2px; min-width: 46px; }
+.check-title { font-family: var(--serif); font-size: 16px; line-height: 1.35; color: var(--ink);
+  text-wrap: pretty; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-left: 58px; margin-top: -4px; }
+.badge { font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: .04em;
+  text-transform: uppercase; padding: 2px 8px; border-radius: 5px; border: 1px solid var(--line-strong);
+  color: var(--ink-faint); background: var(--sunken); }
+.badge.b-mandatory { color: var(--fail); border-color: color-mix(in srgb, var(--fail) 35%, transparent); }
+.badge.b-recommended { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 35%, transparent); }
+.badge.r-critical { color: var(--fail); } .badge.r-high { color: var(--warn); }
+.block { margin-left: 58px; }
+.block-l { font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-faint);
+  font-weight: 600; margin-bottom: 5px; }
+.csum { font-size: 14px; color: var(--ink); }
+.found { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.found li { font-family: var(--mono); font-size: 12px; color: var(--ink-soft); padding: 4px 9px;
+  background: var(--sunken); border-radius: 6px; word-break: break-word; }
+.why { font-size: 13px; line-height: 1.6; color: var(--ink-soft); }
+.cev { font-family: var(--mono); font-size: 11px; color: var(--ink-faint); margin-top: 8px; word-break: break-all; }
 .pill { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .04em; padding: 3px 9px;
-  border-radius: 999px; white-space: nowrap; align-self: center; }
+  border-radius: 999px; white-space: nowrap; align-self: start; }
 .pill.pass { background: var(--pass-bg); color: var(--pass); }
 .pill.fail { background: var(--fail-bg); color: var(--fail); }
 .pill.warn { background: var(--warn-bg); color: var(--warn); }
 .pill.nobs { background: var(--nobs-bg); color: var(--nobs); }
+@media (max-width: 560px) {
+  .badges, .block { margin-left: 0; }
+  .check-top { grid-template-columns: auto 1fr; }
+  .check-top .pill { grid-column: 1 / -1; }
+}
 
 /* prefill table */
 .tscroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 11px; }
@@ -164,10 +186,26 @@ function render(report) {
 
   const checkCards = checks.map((c) => {
     const t = (VERDICT[c.verdict] || {}).tone || 'nobs';
+    const m = c.meta || {};
+    const found = (c.found || []).filter(Boolean);
+    const badges = [
+      m.binding ? `<span class="badge b-${m.binding.toLowerCase()}">${esc(m.binding)}</span>` : '',
+      m.risk ? `<span class="badge r-${m.risk.toLowerCase()}">Risk: ${esc(m.risk)}</span>` : '',
+    ].join('');
     return `<div class="check ${t}">
-      <div class="cid">${esc(c.id)}</div>
-      <div><div class="csum">${esc(c.summary)}</div>${c.evidence ? `<div class="cev">${esc(c.evidence)}</div>` : ''}</div>
-      <span class="pill ${t}">${esc((VERDICT[c.verdict] || {}).label || c.verdict)}</span>
+      <div class="check-top">
+        <span class="cid">${esc(c.id)}</span>
+        <div class="check-title">${esc(m.check || c.summary)}</div>
+        <span class="pill ${t}">${esc((VERDICT[c.verdict] || {}).label || c.verdict)}</span>
+      </div>
+      ${badges ? `<div class="badges">${badges}</div>` : ''}
+      <div class="block">
+        <div class="block-l">What the scan found</div>
+        <div class="csum">${esc(c.summary)}</div>
+        ${found.length ? `<ul class="found">${found.map((f) => `<li>${esc(f)}</li>`).join('')}</ul>` : ''}
+        ${c.evidence ? `<div class="cev">evidence · ${esc(c.evidence)}</div>` : ''}
+      </div>
+      ${m.rationale ? `<div class="block"><div class="block-l">Why it matters</div><div class="why">${esc(m.rationale)}</div></div>` : ''}
     </div>`;
   }).join('\n');
 

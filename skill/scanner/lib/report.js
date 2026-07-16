@@ -56,12 +56,20 @@ export function buildQuestionnaireMarkdown(report) {
 
   L.push('## Automated verdicts (Area C · pre-consent trackers, Area D · banner)');
   L.push('');
-  L.push('| Check | Verdict | What the scan saw | Evidence |');
-  L.push('|-------|---------|-------------------|----------|');
-  for (const [id, c] of Object.entries(report.checks)) {
-    L.push(`| ${id} | ${verdictBadge(c.verdict)} | ${(c.summary || '').replace(/\|/g, '\\|')} | ${c.evidence || '—'} |`);
+  const order = { FAIL: 0, WARN: 1, 'NOT-OBSERVED': 2, PASS: 3 };
+  const ordered = Object.values(report.checks).sort((a, b) => (order[a.verdict] - order[b.verdict]) || a.id.localeCompare(b.id));
+  for (const c of ordered) {
+    const m = c.meta || {};
+    L.push(`### ${c.id} · ${verdictBadge(c.verdict)}${m.check ? ` — ${m.check}` : ''}`);
+    const badges = [m.binding, m.risk ? `Risk: ${m.risk}` : null].filter(Boolean).join(' · ');
+    if (badges) L.push(`*${badges}*`);
+    L.push('');
+    L.push(`**What the scan found.** ${c.summary}`);
+    if ((c.found || []).length) { L.push(''); for (const f of c.found) L.push(`- \`${f}\``); }
+    if (c.evidence) L.push(`\n_Evidence: \`${c.evidence}\`_`);
+    if (m.rationale) { L.push(''); L.push(`**Why it matters.** ${m.rationale}`); }
+    L.push('');
   }
-  L.push('');
 
   L.push('## Level 0 · Answers prefilled by the scan');
   L.push('');

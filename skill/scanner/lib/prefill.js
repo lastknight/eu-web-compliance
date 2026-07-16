@@ -5,6 +5,19 @@
 // for anything the client alone can attest.
 
 import { classifyUrl, classifyCookie, cookieDurationDays, isFirstParty } from './classify.js';
+import { metaFor } from './checkmeta.js';
+
+// Turn whatever detail a finding carries into human-readable "what the scan found" lines.
+function foundLines(c) {
+  const L = [];
+  if (c.trackers) for (const t of c.trackers) L.push(`${t.vendor || t.host}${t.vendor && t.host ? ` — ${t.host}` : ''} · ${t.category}${t.signal ? ` · ${t.signal}` : ''}`);
+  if (c.pixels) for (const p of c.pixels) L.push(`${p.vendor || p.host} pixel · ${p.host}`);
+  if (c.cookies) for (const k of c.cookies) L.push(`${k.name} · ${k.vendor || 'unclassified'}/${k.category}${k.durationDays != null ? ` · ${k.durationDays}d` : ''}${k.domain ? ` · ${k.domain}` : ''}`);
+  if (c.calls) { const by = {}; for (const x of c.calls) by[x.api] = (by[x.api] || 0) + 1; for (const [a, n] of Object.entries(by)) L.push(`${a} ×${n}`); }
+  if (c.origins) for (const o of c.origins) L.push(o);
+  if (c.scenarios && !c.trackers) L.push(c.scenarios.join(', '));
+  return L;
+}
 
 const V = { PASS: 'PASS', FAIL: 'FAIL', WARN: 'WARN', NOBS: 'NOT-OBSERVED' };
 
@@ -139,6 +152,14 @@ export function buildFindings(results, siteHost, nowMs) {
     const raw = (results.accept?._raw || results.clean?._raw);
     const thirdHosts = [...new Set(raw.requests.map((r) => r.host).filter((h) => h && !isFirstParty(h, siteHost)))].slice(0, 40);
     put('Q-B-14', thirdHosts, ['B-06'], 'Confirm and indicate the safeguard for each non-EU supplier');
+  }
+
+  // Enrich every verdict with the canonical checklist metadata (what it verifies, why it
+  // matters, binding, risk) and the normalized "what the scan found" detail.
+  for (const [id, c] of Object.entries(checks)) {
+    const m = metaFor(id);
+    c.meta = m ? { check: m.check, rationale: m.rationale, binding: m.binding, risk: m.risk } : null;
+    c.found = foundLines(c);
   }
 
   return { checks, prefill, verdictLegend: V };
